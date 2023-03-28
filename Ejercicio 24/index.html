@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 24</h1>
+    <p>Escriba una funcion con el nombre esVocal que tome un caracter y devuelva true si es vocal
+        (no importa si es mayuscula o minuscula) y false en caso contrario.
+    </p>
+
+    <pre><code>
+        let ingreseLetra = prompt("Ingrese una vocal");
+
+        function esVocal(ingreseLetra){
+            if(ingreseLetra === "a" || ingreseLetra === "A" || ingreseLetra === "e" || ingreseLetra === "E"
+            || ingreseLetra === "i" || ingreseLetra === "I" || ingreseLetra === "o" 
+            || ingreseLetra === "O" || ingreseLetra === "u" || ingreseLetra === "U"){
+                alert("Es una vocal");
+                console.log("Es una vocal");
+                return true;
+            } else {
+                alert("No es una vocal");
+                console.log("No es una vocal");
+                return false;
+            }
+        }
+
+        esVocal(ingreseLetra);
+    </code></pre>
+
+    <script src="index.js"></script>
+</body>
+</html>

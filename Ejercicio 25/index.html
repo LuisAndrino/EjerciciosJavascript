@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 25</h1>
+    <p>Crea una funcion llamada generarCaracteres() que tome como parametro un numero entero
+        (n) y un caracter, retornar el caracter multiplicado por n. Por ejemplo, 
+        generarCaracteres(3, "*") deberia retornar "***".
+    </p>
+
+    <pre><code>
+        let ingreseNumero = prompt("Ingrese un número");
+        ingreseNumero = parseInt(ingreseNumero);
+        let ingreseUnCaracter = prompt("Ingrese un caracter");
+
+        function generarCaracteres(numero, caracter){
+            let nuevoCaracter = "";
+
+            for(let i = 0; i < numero; i++){
+                nuevoCaracter += caracter;
+            }
+
+            console.log(nuevoCaracter);
+            alert(nuevoCaracter);
+            return nuevoCaracter;
+        }
+
+        generarCaracteres(ingreseNumero, ingreseUnCaracter);
+    </code></pre>
+
+    <script src="index.js"></script>
+</body>
+</html>

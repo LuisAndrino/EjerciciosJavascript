@@ -1,0 +1,10 @@
+pre{
+    font-family: monospace; /* Fuente monoespaciada */
+    background-color: #1c1c1c; /* Fondo oscuro */
+    color: #dcdcdc; /* Texto claro */     
+}
+
+pre > code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
