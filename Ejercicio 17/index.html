@@ -9,7 +9,21 @@
 <body>
     <h1>Ejercicio 17</h1>
     <p>Escriba un programa que solicite una contraseña y la vuelva a solicitar hasta que la contraseña coincida</p>
+    <pre><code>
+        let condicion = true;
 
+        let contraseña = prompt("Ingrese su contraseña");
+
+        while(condicion){
+            let repeat = prompt("Ingrese su contraseña nuevamente");
+            if(contraseña == repeat){
+                condicion = false;
+            }
+            else{
+                alert("Las contraseñas no coinciden, ingresalas nuevamente");
+            }   
+        }
+    </code></pre>
     <script src="index.js"></script>
 </body>
 </html>

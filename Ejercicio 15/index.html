@@ -11,7 +11,17 @@
     <p>Escriba un programa que pregunte una y otra vez si se quiere seguir ejecutando el
         programa, siempre que se conteste sí. (en minuscula y con tilde);
     </p>
-
+    <pre><code>
+        let condiciones = true;
+        let pregunta = prompt("Quiere seguir ejecutando el programa? conteste con un sí");
+        while(condiciones){
+            if(pregunta == "sí"){
+                pregunta = prompt("Quiere seguir ejecutando el programa? conteste con un sí");
+            }else{
+                condiciones = false;
+            }
+        }
+    </code></pre>
     <script src="index.js"></script>
 </body>
 </html>

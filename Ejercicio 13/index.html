@@ -14,6 +14,29 @@
     <p>Si ha comprado entre 300 y 600 euros le descuenta un 10%</p>
     <p>Si ha comprado más de 600 euros le descuenta un 15%</p>
 
+
+    <pre><code>
+        let precio = prompt("Ingrese cuanto gasto:");
+        precio = parseInt(precio);
+
+        switch (true) {
+            case precio < 100:
+                alert("No tienes descuento");
+                break;
+            case precio >= 100 && precio < 300:
+                alert("Tienes un descuento del 5%, tu nuevo precio es de: " + precio * 0.95);
+                break;
+            case precio >= 300 && precio < 500:
+                alert("Tienes un descuento del 10% tu nuevo precio es de: " + precio * 0.9);
+                break;
+            case precio >= 500:
+                alert("Tienes un descuento del 15% tu nuevo precio es de: " + precio * 0.85);
+                break;
+            default:
+                alert("No es un numero");
+                break;
+        }
+    </code></pre>
     <script src="index.js"></script>
 </body>
 </html>

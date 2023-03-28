@@ -12,6 +12,19 @@
         ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide cerveza o vino se 
         le dirige a la barra y si no se le dirige a la tienda.
     </p>
+
+    <pre><code>
+        let opcion = prompt("Elija una opcion entre: vino, cerveza, refresco o agua");
+
+        if(opcion == "vino" || opcion == "Vino" || opcion == "cerveza" || opcion == "Cerveza"){
+            alert("Deberias ir a la barra de bebidas");
+        } else if (opcion == "refresco" || opcion == "Refresco" || opcion == "agua" || opcion == "Agua") {
+            alert("Deberias ir a la tienda");
+        } else{
+            alert("Opcion invalida");
+        }
+    </code></pre>
+
     <script src="index.js"></script>
 </body>
 </html>

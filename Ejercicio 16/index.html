@@ -11,7 +11,18 @@
     <p>Escriba un programa que pregunte una y otra vez si quiere terminar el
         programa, salvo a que se conteste SI. (en mayuscula y sin tilde);
     </p>
-
+    <pre><code>
+        let condiciones = true;
+        let pregunta = prompt("Quieres terminar de ejecutar  el programa? conteste con un SI");
+        while(condiciones){
+            if(pregunta == "SI"){
+                condiciones = false;
+            }
+            else{
+                pregunta = prompt("Quieres terminar de ejecutar  el programa? conteste con un SI");
+            }
+        }
+    </code></pre>
     <script src="index.js"></script>
 </body>
 </html>

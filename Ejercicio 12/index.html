@@ -13,6 +13,24 @@
         vino blanco y si pide verduras se le ofrecera como bebida agua.
     </p>
     <p>Si no elije una opcion del menu, aparecera la opcion de elija carne, pescado o verduras</p>
+    <pre><code>
+        let eleccion = prompt("Ingrese una opción: carne, pescado o verduras");
+
+        switch (eleccion) {
+            case "carne":
+                alert("Elegiste carne, dejame recomendarte vino tinto como bebida");
+                break;
+            case "pescado":
+                alert("Elegiste pescado, dejame recomendarte vino blanco como bebida");
+                break;
+            case "verduras":
+                alert("Elegiste verduras, dejame recomendarte agua como bebida");
+                break;
+            default:
+                alert("No elegiste una opción válida, elige entre carne, pescado o verduras");
+                break;
+        }
+    </code></pre>
     <script src="index.js"></script>
 </body>
 </html>
