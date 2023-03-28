@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>Ejercicio 26</h1>
+    <p>Crear un programa que muestre 3 opciones</p>
+    <ul>
+        <li>Calcular la tension electrica</li>
+        <li>Calcular la intensidad de la corriente electrica</li>
+        <li>Calcular la resistencia electrica</li>
+    </ul>
+    <p>Al seleccionar cualquier opcion, solicite dos numeros enteros mediante prompt y realice el calculo con 
+        las ecuaciones correspondientes.
+    </p>
+
+    <pre><code>
+        let seleccionaUnNumero = prompt("¿Que quieres hacer? \n 1. Calcular la tension electrica \n 2. Calcular la intensidad de la corriente electrica \n 3. Calcular la resistencia electrica");
+        seleccionaUnNumero = parseInt(seleccionaUnNumero);
+
+
+        function calcularV(intensidad, resistencia) {
+            let tension = intensidad * resistencia;
+            alert("La tension electrica es: " + tension + " voltios");
+            return tension;
+        }
+
+        function calcularI(tension, resistencia) {
+            let intensidad = tension / resistencia;
+            alert("La intensidad de la corriente electrica es: " + intensidad + " amperios");
+            return intensidad;
+        }
+
+        function calcularR(tension, intensidad) {
+            let resistencia = tension / intensidad;
+            alert("La resistencia electrica es: " + resistencia + " ohmios");
+            return resistencia;
+        }
+
+        if (seleccionaUnNumero == 1) {
+            let ingreseIntensidad = prompt("Ingrese la intensidad de la corriente electrica");
+            ingreseIntensidad = parseInt(ingreseIntensidad);
+            let ingreseResistencia = prompt("Ingrese la resistencia electrica");
+            ingreseResistencia = parseInt(ingreseResistencia);
+            calcularV(ingreseIntensidad, ingreseResistencia);
+        } else if (seleccionaUnNumero == 2) {
+            let ingreseTension = prompt("Ingrese la tension electrica");
+            ingreseTension = parseInt(ingreseTension);
+            let ingreseResistencia = prompt("Ingrese la resistencia electrica");
+            ingreseResistencia = parseInt(ingreseResistencia);
+            calcularI(ingreseTension, ingreseResistencia);
+        } else if (seleccionaUnNumero == 3) {
+            let ingreseTension = prompt("Ingrese la tension electrica");
+            ingreseTension = parseInt(ingreseTension);
+            let ingreseIntensidad = prompt("Ingrese la intensidad de la corriente electrica");
+            ingreseIntensidad = parseInt(ingreseIntensidad);
+            calcularR(ingreseTension, ingreseIntensidad);
+        } else {
+            alert("No es una opcion valida");
+        }
+    </code></pre>
+
+    <script src="index.js"></script>
+</body>
+</html>
