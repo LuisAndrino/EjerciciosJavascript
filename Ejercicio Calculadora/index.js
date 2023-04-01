@@ -1,6 +1,12 @@
-const divDisplay = document.querySelector(".display");
 const miDisplay = document.querySelector(".parrafo");
 let encendido = false;
+
+const boton = document.querySelector(".on");
+boton.addEventListener('click', function(){
+    boton.classList.toggle("encendido")
+    miDisplay.textContent = "";
+})
+
 
 function encender(){
     encendido = !encendido;

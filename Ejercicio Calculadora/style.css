@@ -4,6 +4,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 
 
@@ -12,8 +13,10 @@ body{
     flex-direction: column;
     height: 500px;
     width: 400px;
-    background-color: red;
+    background-color: rgb(90, 89, 89);
     align-items: center;
+    border: 1px black solid;
+    border-radius: 5px;
 }
 
 .display{
@@ -23,6 +26,8 @@ body{
     background-color: green;
     display: flex;
     justify-content: flex-end;
+    border: 1px black solid;
+    border-radius: 5px;
 }
 
 .botones{
@@ -41,4 +46,14 @@ body{
     width: 60px;
     height: 40px;
     margin: 10px 10px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.encendido{
+    background-color: red;
+}
+
+.del , .igual , .clear{
+    background-color: red;
 }
